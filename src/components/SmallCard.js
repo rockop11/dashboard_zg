@@ -1,4 +1,4 @@
-import React, { Component, setState } from "react";
+import React, { Component } from "react";
 
 class SmallCard extends Component {
   constructor(props) {

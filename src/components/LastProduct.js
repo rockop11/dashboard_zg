@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import imagenFondo from '../img/mandalorian.jpg';
 
 class LastProduct extends Component {
     constructor(props) {
@@ -30,6 +29,7 @@ class LastProduct extends Component {
     }
 
     render() {
+        let url = "/img/fotosMulter/" + this.state.image
         return (
           <div className="col-lg-6 mb-4">
               <div className="card shadow mb-4">
@@ -38,7 +38,7 @@ class LastProduct extends Component {
                   </div>
                   <div className="card-body">
                       <div className="text-center">
-                          <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={this.state.image} alt=" Ultimo producto "/>
+                          <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 30 +'rem'}} src={url} alt=" Ultimo producto "/>
                       </div>
                       <p>{this.state.description}</p>
                       <p>{this.state.price}</p>
